@@ -170,9 +170,11 @@ public class AppConfig {
                        ┌────────────────────┐
                        │     Application    │
                        │       Code         │
-                       └────────▲───────────┘
+                       └────────────────────┘
+                                ▲
                                 │
                                 │ Control Inversion
+                                │
                                 ▼
                       ┌─────────────────────┐
                       │ Spring IoC Container│
