@@ -180,7 +180,7 @@ public class AppConfig {
                            │
        ┌───────────────────┼───────────────────────┐
        ▼                   ▼                       ▼
-Object Creation      Dependency Injection    Bean Lifecycle Mgmt
+      Object Creation      Dependency Injection    Bean Lifecycle Mgmt
 
 
 ---
