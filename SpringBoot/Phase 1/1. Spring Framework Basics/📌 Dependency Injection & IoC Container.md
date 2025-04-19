@@ -125,7 +125,11 @@ By default, Spring beans are **singleton** (one instance per Spring container).
 |`request`|One per HTTP request (web apps)|
 |`session`|One per HTTP session (web apps)|
 
-`@Component @Scope("prototype") public class MyBean { }`
+```
+@Component
+@Scope("prototype")
+public class MyBean { }
+```
 
 ---
 
@@ -149,9 +153,10 @@ By default, Spring beans are **singleton** (one instance per Spring container).
 ### Java Config (Recommended)
 
 ```
-@Component
-@Scope("prototype")
-public class MyBean { }
+@Configuration
+@ComponentScan(basePackages = "com.example")
+public class AppConfig {
+}
 ```
 
 ### XML Config (Legacy)
@@ -162,20 +167,20 @@ public class MyBean { }
 
 ## 🧠 Quick Concept Map:
 
-              ┌────────────────────┐
-              │     Application    │
-              │       Code         │
-              └────────▲───────────┘
-                       │
-                       │ Control Inversion
-                       ▼
-             ┌──────────────────────┐
-             │  Spring IoC Container│
-             └──────────────────────┘
-                       │
-       ┌───────────────────┼───────────────────-─┐
-       ▼                   ▼                     ▼
-  Object Creation        Dependency Injection            Bean Lifecycle Mgmt
+                 ┌────────────────────┐
+                 │     Application    │
+                 │       Code         │
+                 └────────▲───────────┘
+                          │
+                          │ Control Inversion
+                          ▼
+                ┌──────────────────────┐
+                │  Spring IoC Container│
+                └──────────────────────┘
+                           │
+       ┌───────────────────┼───────────────────────┐
+       ▼                   ▼                       ▼
+Object Creation      Dependency Injection    Bean Lifecycle Mgmt
 `
 
 ---
