@@ -11,9 +11,10 @@
 > You're manually creating and injecting dependencies.
 
 **With IoC (Spring):**
-
-`@Autowired`
-`private UserService userService;`
+```
+@Autowired
+private UserService userService;
+```
 
 > Spring manages and injects dependencies for you.
 
