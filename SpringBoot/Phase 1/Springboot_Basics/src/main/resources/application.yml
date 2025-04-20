@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Springboot_Basics
+server:
+  port: 8080

@@ -1,0 +1,6 @@
+com\phase1\springboot_basics\SpringbootBasicsApplication.class
+com\phase1\springboot_basics\config\AppConfig.class
+com\phase1\springboot_basics\controller\UserController.class
+com\phase1\springboot_basics\repository\UserRepository.class
+com\phase1\springboot_basics\service\UserService.class
+com\phase1\springboot_basics\model\User.class
