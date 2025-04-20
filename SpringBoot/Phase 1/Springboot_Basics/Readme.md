@@ -10,7 +10,6 @@
 **` http://localhost:8080/api/users `** - Hit the endpoint (Paste the url in any browser)
 #####   *Output from browser:*
 ```
-    
 [
     {
         "id": 1,
